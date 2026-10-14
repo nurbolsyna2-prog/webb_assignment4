@@ -17,5 +17,9 @@ On task1 asks that using (required,Maxlenght,minlenght etc) our code now ![task1
 ![task2](image-4.png) There u can see that we have changed all old code and our web looks like this ![looking](image-5.png) the second task we used boostrap style u can see that <div class="mb-3"> and its looks better
 
 -task2.3
-there added some messeges for user ![task2.3](image-6.png) and its looks like ![looking](image-7.png)
+there added some messeges for user ![task2.3](image-6.png) and its looks like ![looking](image-7.png) here added some Bootstrap gird
+-
+
+
+-task3
 

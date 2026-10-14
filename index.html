@@ -11,34 +11,37 @@
 </head>
 
 <body>
-    <form>
+    <div class="container">
+        <form>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" id="name" name="name" maxlength="50" minlength="2" required
+                        class="form-control is-invalid" placeholder="e.g Suizza">
+                    <div class="invalid-feedback">Name is invalid.</div>
+                    <div class="form-text">Write your name</div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control is-valid" id="email" name="email" required
+                        placeholder="need to write correct email">
+                    <div class="valid-feedback">Email is valid.</div>
+                    <div class="form-text">email@domain.com</div>
 
 
-        <div class="mb-3">
-            <label for="name" class="form-label">Name:</label>
-            <input type="text" id="name" name="name" maxlength="50" minlength="2" required class="form-control"
-                placeholder="e.g Suizza Han">
-            <div class="form-text">Write your name</div>
 
-        </div>
+                    <div class="col-12">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" required maxlength="200" minlength="10"
+                            class="form-control" placeholder="Write your message here..."></textarea>
+                        <div class="form-text">Write your message, it can't be empty min 10 characters</div>
 
-        <div class="mb-3">
-            <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email" name="email" required
-                placeholder="need to write correct email">
-            <div class="form-text">email@domain.com</div>
-        </div>
 
-        <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea id="message" name="message" required maxlength="200" minlength="10" class="form-control"
-                placeholder="Write your message here..."></textarea>
-            <div class="form-text">Write your message, it can't be empty min 10 characters</div>
+                        <button type="submit" class="btn btn-secondary">Submit</button>
 
-        </div>
-        <input type="submit" value="submit">
-
-    </form>
+        </form>
 
 </body>
 
