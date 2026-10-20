@@ -47,9 +47,3 @@ body {
 .nav-links a.active {
     text-decoration: underline;
 }
-
-.invalid-feedback {
-    color: red;
-    font-size: 0.9rem;
-    margin-top: 4px;
-}
