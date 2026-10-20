@@ -118,52 +118,6 @@
         </form>
     </div>
 
-    <script>
-        const form = document.querySelector("form");
-        const password = document.getElementById("password");
-        const confirm = document.getElementById("confirm");
-
-        form.addEventListener("submit", function (event) {
-            event.preventDefault();
-            let allOk = true;
-
-            // passwords must match
-            if (password.value !== confirm.value) {
-                confirm.setCustomValidity("Passwords do not match");
-            } else {
-                confirm.setCustomValidity("");
-            }
-
-            // check every text field and the select
-            const fields = form.querySelectorAll(
-                "input[type=text], input[type=email], input[type=password], select");
-            fields.forEach(function (field) {
-                if (field.checkValidity()) {
-                    field.classList.add("is-valid");
-                    field.classList.remove("is-invalid");
-                } else {
-                    field.classList.add("is-invalid");
-                    field.classList.remove("is-valid");
-                    allOk = false;
-                }
-            });
-
-            // radio group check
-            const genderChosen = form.querySelector("input[name=gender]:checked");
-            document.getElementById("gender-error").classList.toggle("d-none", genderChosen !== null);
-            if (!genderChosen) allOk = false;
-
-            if (allOk) alert("Registration successful!");
-        });
-
-        // Reset button: also clear the green/red colors
-        form.addEventListener("reset", function () {
-            form.querySelectorAll(".is-valid, .is-invalid").forEach(function (field) {
-                field.classList.remove("is-valid", "is-invalid");
-            });
-            document.getElementById("gender-error").classList.add("d-none");
-        });
-    </script>
 </body>
 
 </html>
