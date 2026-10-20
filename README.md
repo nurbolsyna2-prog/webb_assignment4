@@ -22,6 +22,6 @@ there added some messeges for user ![task2.3](image-6.png) and its looks like ![
 
 
 -task3
-The Regestration page for this i created the second html file and code's![alt text](image-8.png) ,![alt text](image-9.png), ![ ](image-10.png) and it's looks on web like this ![alt text](image-11.png)
+The Regestration page for this i created the second html file and code's![alt text](image-8.png) ,![alt text](image-9.png),  and it's looks on web like this ![alt text](image-11.png)
 
 and regestration page included all criterias ![alt text](image-12.png) 
